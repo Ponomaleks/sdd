@@ -22,7 +22,8 @@ after the code is written.
 flowchart LR
     IV[interview<br/>optional] -->|docs/idea-brief.md| SV[survey<br/>once per repo]
     SV -->|docs/architecture-map.md| RM[roadmap<br/>decomposition]
-    SV -->|greenfield| SC[scaffold] --> S
+    RM -->|greenfield: step 1| SC[scaffold] --> S
+    SV -.->|greenfield, no brief| SC
     RM -.->|per step| S
     IV -.-> S
     SV -.->|brownfield| S
@@ -198,7 +199,8 @@ selector or minimum count. Research follows a decision-changing gap; critique fo
 datastores, conventions, a C4 of what exists — so no later stage re-opens "what's the current
 architecture?" `specify`/`design`/`data-model`/`implement` all read it. An empty repo gets a short
 foundation session instead (`mode: greenfield-bootstrap` + a scaffold `tasks.json` that
-`/sdd:scaffold` materializes). Refresh once the repo drifts past its recorded `reflects_commit`.
+`/sdd:scaffold` materializes — after `roadmap` when there is a brief, since the skeleton is the
+roadmap's step 1). Refresh once the repo drifts past its recorded `reflects_commit`.
 
 **The idea, decomposed.** `roadmap` breaks it into `docs/roadmap.md`: source-anchored steps sized
 XS–XL or `fog` (unformulated work waits in `Not yet specified` until a recon pass sharpens it), a

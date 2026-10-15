@@ -83,7 +83,7 @@ Whoever owns product direction (PM / lead / the solo maintainer).
    a first cut worth re-cutting after `/sdd:survey` fills the map. A missing map degrades one
    column; it does not block the decomposition.
 
-   **Greenfield (empty repo, no `docs/features/*` at all): the first step is `scaffold`.** Every
+   **Greenfield (`docs/architecture-map.md` says `mode: greenfield-bootstrap`, or an empty repo with no `docs/features/*` besides `_scaffold/`): the first step is `scaffold`** — unless its `scaffold: materialize skeleton` commit already exists, then it is marked done. Every
    other step assumes a skeleton to build into — a repo with no module layout, no test harness and
    no migration tooling cannot receive step 1 as written. Its source anchor is the foundation
    section of `docs/architecture-map.md` when the map exists, otherwise the brief itself (the
