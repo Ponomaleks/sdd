@@ -62,7 +62,7 @@ rides along in the stage's first commit ([`write-and-commit.md`](./write-and-com
      section below becomes the file's body. Keep the inline comments — they list the allowed values. -->
 
 ```yaml
-interview_depth: medium    # easy | medium | hard — plugin-wide default for specify/clarify/design (see _shared/interview-depth.md)
+interview_depth: easy    # easy | medium | hard — plugin-wide default for specify/clarify/design (see _shared/interview-depth.md)
 artifact_language: en      # en | uk (any language tag) — language pipeline DOCUMENTS are written in; headings + machine tokens stay English (see _shared/artifact-language.md)
 tdd: true                  # enforce red→green→refactor
 team_mode: false           # true → agent team via TeamCreate
